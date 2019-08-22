@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PickerViewController" customModule="Helloworld" customModuleProvider="target">
+            <connections>
+                <outlet property="pickerView" destination="Zqh-7M-OSe" id="NPn-BX-40E"/>
+                <outlet property="textViewValue" destination="0vn-Jq-xq9" id="pgs-Ch-XEu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zqh-7M-OSe">
+                    <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                </pickerView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="i5C-6D-d6c">
+                    <rect key="frame" x="134.5" y="330.5" width="106" height="20.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZy-54-Ot1">
+                            <rect key="frame" x="0.0" y="0.0" width="37" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vn-Jq-xq9">
+                            <rect key="frame" x="64" y="0.0" width="42" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="0vn-Jq-xq9" firstAttribute="leading" secondItem="AZy-54-Ot1" secondAttribute="trailing" id="ic1-Tc-pxR"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CW-Xt-DRa">
+                    <rect key="frame" x="24" y="44" width="75" height="33.5"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="navigation:" destination="-1" eventType="touchUpInside" id="M8V-gh-XAw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Zqh-7M-OSe" firstAttribute="top" secondItem="i5C-6D-d6c" secondAttribute="bottom" constant="100" id="1Hq-4p-RAF"/>
+                <constraint firstItem="Zqh-7M-OSe" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="BhJ-PP-31N"/>
+                <constraint firstItem="Zqh-7M-OSe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IRh-uJ-dYU"/>
+                <constraint firstItem="5CW-Xt-DRa" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.05" id="J73-sW-eKI"/>
+                <constraint firstItem="5CW-Xt-DRa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="P5t-Af-W3u"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Zqh-7M-OSe" secondAttribute="trailing" id="WFY-jV-b37"/>
+                <constraint firstItem="Zqh-7M-OSe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="d6z-5k-DqG"/>
+                <constraint firstItem="5CW-Xt-DRa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="hDU-xu-ufo"/>
+                <constraint firstItem="5CW-Xt-DRa" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.2" id="j96-MY-uXH"/>
+                <constraint firstItem="i5C-6D-d6c" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kmO-Q7-uVw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+</document>
