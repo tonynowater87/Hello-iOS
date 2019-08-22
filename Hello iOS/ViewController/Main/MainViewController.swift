@@ -8,6 +8,12 @@
 
 import UIKit
 
+enum EnumComponents: String {
+    case UIPickerView
+    case UITableView
+    case UIAlertController
+}
+
 class MainViewController: UIViewController {
     
     @IBOutlet weak var tableViewComponents: UITableView!
@@ -66,7 +72,9 @@ class MainViewController: UIViewController {
         case .UIPickerView:
             navigationController?.pushViewController(PickerViewController(), animated: true)
         case .UITableView:
-            navigationController?.pushViewController(UITableViewController(), animated: true)
+            navigationController?.pushViewController(TableViewViewController(), animated: true)
+        case .UIAlertController:
+            navigationController?.pushViewController(AlertViewController(), animated: true)
         default:
             fatalError("illegal argument:\(component)")
         }

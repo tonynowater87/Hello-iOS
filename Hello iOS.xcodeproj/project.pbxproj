@@ -23,7 +23,8 @@
 		F6411BA2230D351700C3011C /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411BA1230D351700C3011C /* TableViewDataSource.swift */; };
 		F6411BA5230D38F500C3011C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411BA3230D38F500C3011C /* TableViewCell.swift */; };
 		F6411BA6230D38F500C3011C /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411BA4230D38F500C3011C /* TableViewCell.xib */; };
-		F6411BAC230E33E400C3011C /* EnumComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411BAB230E33E400C3011C /* EnumComponents.swift */; };
+		F6411BB0230E363F00C3011C /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411BAE230E363F00C3011C /* AlertViewController.swift */; };
+		F6411BB1230E363F00C3011C /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411BAF230E363F00C3011C /* AlertViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +67,8 @@
 		F6411BA1230D351700C3011C /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		F6411BA3230D38F500C3011C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F6411BA4230D38F500C3011C /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		F6411BAB230E33E400C3011C /* EnumComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumComponents.swift; sourceTree = "<group>"; };
+		F6411BAE230E363F00C3011C /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		F6411BAF230E363F00C3011C /* AlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		F6411B8D230D2C8900C3011C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F6411BAD230E35FF00C3011C /* AlertController */,
 				F6411B9C230D339B00C3011C /* TableView */,
 				F6411B91230D2D2000C3011C /* Picker */,
 				F6411B8E230D2CB600C3011C /* Main */,
@@ -162,7 +165,6 @@
 				F6411BA9230E259200C3011C /* Datasource */,
 				F6411B96230D2DD100C3011C /* MainViewController.swift */,
 				F6411B97230D2DD100C3011C /* MainViewController.xib */,
-				F6411BAB230E33E400C3011C /* EnumComponents.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -233,6 +235,15 @@
 				F6411BA4230D38F500C3011C /* TableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		F6411BAD230E35FF00C3011C /* AlertController */ = {
+			isa = PBXGroup;
+			children = (
+				F6411BAE230E363F00C3011C /* AlertViewController.swift */,
+				F6411BAF230E363F00C3011C /* AlertViewController.xib */,
+			);
+			path = AlertController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +352,7 @@
 			files = (
 				F6411B6A230D2C1D00C3011C /* LaunchScreen.storyboard in Resources */,
 				F6411B67230D2C1D00C3011C /* Assets.xcassets in Resources */,
+				F6411BB1230E363F00C3011C /* AlertViewController.xib in Resources */,
 				F6411B99230D2DD100C3011C /* MainViewController.xib in Resources */,
 				F6411B95230D2D4C00C3011C /* PickerViewController.xib in Resources */,
 				F6411B9B230D306B00C3011C /* .gitignore in Resources */,
@@ -372,11 +384,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6411B98230D2DD100C3011C /* MainViewController.swift in Sources */,
+				F6411BB0230E363F00C3011C /* AlertViewController.swift in Sources */,
 				F6411BA2230D351700C3011C /* TableViewDataSource.swift in Sources */,
 				F6411B94230D2D4C00C3011C /* PickerViewController.swift in Sources */,
 				F6411BA5230D38F500C3011C /* TableViewCell.swift in Sources */,
 				F6411B9F230D33B800C3011C /* TableViewViewController.swift in Sources */,
-				F6411BAC230E33E400C3011C /* EnumComponents.swift in Sources */,
 				F6411B60230D2C1B00C3011C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
