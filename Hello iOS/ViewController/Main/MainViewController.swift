@@ -14,6 +14,7 @@ enum EnumComponents: String {
     case UIAlertController
     case UIImagePicker
     case DrawCanvas
+    case UICollectionView
 }
 
 class MainViewController: UIViewController {
@@ -21,7 +22,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var tableViewComponents: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    private static let components = [EnumComponents.UIPickerView, .UITableView, .UIAlertController, .UIImagePicker, .DrawCanvas]
+    private static let components = [EnumComponents.UIPickerView, .UITableView, .UIAlertController, .UIImagePicker, .DrawCanvas, .UICollectionView]
     private static let CELL_ID = "TableViewCell"
     
     private let mDataSource: TableViewDataSource = TableViewDataSource(items: MainViewController.components, itemIdentifier: MainViewController.CELL_ID)
@@ -90,6 +91,8 @@ class MainViewController: UIViewController {
             navigationController?.pushViewController(ImagePickerViewController(), animated: true)
         case .DrawCanvas:
             navigationController?.pushViewController(DrawCanvasViewController(), animated: true)
+        case .UICollectionView:
+            navigationController?.pushViewController(CollectionViewViewController(), animated: true)
         default:
             fatalError("illegal argument:\(component)")
         }
