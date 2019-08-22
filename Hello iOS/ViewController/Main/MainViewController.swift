@@ -10,10 +10,18 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    @IBOutlet weak var tableViewComponents: UITableView!
+    
+    private static let components = [EnumComponents.UIPickerView, EnumComponents.UITableView, EnumComponents.UIAlertController]
+    private static let CELL_ID = "TableViewCell"
+    
+    private let mDataSource: TableViewDataSource = TableViewDataSource(items: MainViewController.components, itemIdentifier: MainViewController.CELL_ID)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad")
         // Do any additional setup after loading the view, typically from a
+        setUpTableView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,7 +42,36 @@ class MainViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         print("viewDidDisappear")
-}
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        print("didReceiveMemoryWarning")
+    }
+    
+    private func setUpTableView() {
+        let uiNib = UINib(nibName: MainViewController.CELL_ID, bundle: nil)
+        tableViewComponents.register(uiNib, forCellReuseIdentifier: MainViewController.CELL_ID)
+        tableViewComponents.dataSource = mDataSource
+        tableViewComponents.delegate = mDataSource
+        
+        mDataSource.itemSelectedListener = {
+            selectedItem in
+            self.navigate(selectedItem)
+        }
+    }
+    
+    private func navigate(_ component: EnumComponents) {
+        switch component {
+        case .UIPickerView:
+            navigationController?.pushViewController(PickerViewController(), animated: true)
+        case .UITableView:
+            navigationController?.pushViewController(UITableViewController(), animated: true)
+        default:
+            fatalError("illegal argument:\(component)")
+        }
+    }
+    
     @IBAction func navigateToUIPickerView(_ sender: UIButton) {
         //change page from bottom to top
         //present(PickerViewController(), animated: true, completion: nil)
@@ -43,9 +80,6 @@ class MainViewController: UIViewController {
         //change page from left to right
         navigationController?.pushViewController(PickerViewController(), animated: true)
         //navigationController?.popViewController(animated: true)
-    }
-    @IBAction func navigateToTableView(_ sender: UIButton) {
-        navigationController?.pushViewController(TableViewViewController(), animated: true)
     }
 }
 

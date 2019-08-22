@@ -8,18 +8,18 @@
 
 import UIKit
 
-typealias TableCellClickListener = ((_ selectedItem:Int)->())
+typealias TableCellClickListener = ((_ selectedItem:EnumComponents)->())
 
 class TableViewDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
     
-    var items:[Int] {didSet {
-        print("willSet:\\items.count")
+    var items:[EnumComponents] {didSet {
+            print("willSet:\(items.count)")
         }}
     var itemIdentifier:String
     
     var itemSelectedListener: TableCellClickListener?
     
-    init(items: [Int], itemIdentifier: String) {
+    init(items: [EnumComponents], itemIdentifier: String) {
         self.items = items
         self.itemIdentifier = itemIdentifier
     }
@@ -32,7 +32,7 @@ class TableViewDataSource: NSObject, UITableViewDataSource, UITableViewDelegate 
         let cell = tableView.dequeueReusableCell(withIdentifier: itemIdentifier) as! TableViewCell
         
         if let item = itemAt(indexPath: indexPath) {
-            cell.setIndex(index: item)
+            cell.setText(text: item.rawValue)
         }
         
         return cell
@@ -45,7 +45,7 @@ class TableViewDataSource: NSObject, UITableViewDataSource, UITableViewDelegate 
         }
     }
     
-    private func itemAt(indexPath:IndexPath) -> Int?{
+    private func itemAt(indexPath:IndexPath) -> EnumComponents?{
         guard indexPath.row >= 0 && indexPath.row < items.count else{
             return nil
         }

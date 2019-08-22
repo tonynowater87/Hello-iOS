@@ -10,28 +10,10 @@ import UIKit
 
 class TableViewViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
-    
-    private var dataSource:TableViewDataSource?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        setUpTableView()
     }
-    
-    func setUpTableView() {
-        let uiNib = UINib(nibName: "TableViewCell", bundle: nil)
-        tableView.register(uiNib, forCellReuseIdentifier: "TableViewCell")
-        dataSource = TableViewDataSource(items: [1,2,3,4,5], itemIdentifier: "TableViewCell")
-        dataSource?.itemSelectedListener = {
-            [weak self] selectedCell in
-            print("itemSelectedListener:\(selectedCell)")
-        }
-        tableView.dataSource = dataSource
-        tableView.delegate = dataSource
-    }
-    
     
     /*
      // MARK: - Navigation

@@ -11,7 +11,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableViewViewController" customModule="Hello_iOS" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="K18-ln-zRu" id="8Ut-mO-Rdo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,19 +18,7 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K18-ln-zRu">
-                    <rect key="frame" x="0.0" y="10" width="375" height="647"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </tableView>
-            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="K18-ln-zRu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="94A-WH-lXU"/>
-                <constraint firstItem="K18-ln-zRu" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" id="Uam-vb-XCr"/>
-                <constraint firstItem="K18-ln-zRu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qtH-ya-gLe"/>
-                <constraint firstItem="K18-ln-zRu" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" id="xp8-5H-8ok"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>

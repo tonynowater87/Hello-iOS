@@ -23,6 +23,7 @@
 		F6411BA2230D351700C3011C /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411BA1230D351700C3011C /* TableViewDataSource.swift */; };
 		F6411BA5230D38F500C3011C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411BA3230D38F500C3011C /* TableViewCell.swift */; };
 		F6411BA6230D38F500C3011C /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411BA4230D38F500C3011C /* TableViewCell.xib */; };
+		F6411BAC230E33E400C3011C /* EnumComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411BAB230E33E400C3011C /* EnumComponents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		F6411BA1230D351700C3011C /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		F6411BA3230D38F500C3011C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F6411BA4230D38F500C3011C /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		F6411BAB230E33E400C3011C /* EnumComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumComponents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,8 +158,11 @@
 		F6411B8E230D2CB600C3011C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F6411BAA230E25AE00C3011C /* Cell */,
+				F6411BA9230E259200C3011C /* Datasource */,
 				F6411B96230D2DD100C3011C /* MainViewController.swift */,
 				F6411B97230D2DD100C3011C /* MainViewController.xib */,
+				F6411BAB230E33E400C3011C /* EnumComponents.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -202,8 +207,6 @@
 		F6411BA7230D45E100C3011C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				F6411BA3230D38F500C3011C /* TableViewCell.swift */,
-				F6411BA4230D38F500C3011C /* TableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -211,9 +214,25 @@
 		F6411BA8230D45F000C3011C /* Datasource */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		F6411BA9230E259200C3011C /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
 				F6411BA1230D351700C3011C /* TableViewDataSource.swift */,
 			);
 			path = Datasource;
+			sourceTree = "<group>";
+		};
+		F6411BAA230E25AE00C3011C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F6411BA3230D38F500C3011C /* TableViewCell.swift */,
+				F6411BA4230D38F500C3011C /* TableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +376,7 @@
 				F6411B94230D2D4C00C3011C /* PickerViewController.swift in Sources */,
 				F6411BA5230D38F500C3011C /* TableViewCell.swift in Sources */,
 				F6411B9F230D33B800C3011C /* TableViewViewController.swift in Sources */,
+				F6411BAC230E33E400C3011C /* EnumComponents.swift in Sources */,
 				F6411B60230D2C1B00C3011C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -32,7 +32,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="labelCell" destination="bSR-3P-i7V" id="9VO-Nz-aDU"/>
+                <outlet property="labelCell" destination="bSR-3P-i7V" id="XO6-1W-dvG"/>
             </connections>
         </tableViewCell>
     </objects>

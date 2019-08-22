@@ -10,6 +10,7 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    
     @IBOutlet weak var labelCell: UILabel!
     
     override func awakeFromNib() {
@@ -23,7 +24,7 @@ class TableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setIndex(index: Int) {
-        labelCell.text = String(index)
+    func setText(text: String) {
+        labelCell.text = text
     }
 }
