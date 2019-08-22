@@ -17,6 +17,7 @@ enum EnumComponents: String {
 class MainViewController: UIViewController {
     
     @IBOutlet weak var tableViewComponents: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     private static let components = [EnumComponents.UIPickerView, EnumComponents.UITableView, EnumComponents.UIAlertController]
     private static let CELL_ID = "TableViewCell"
@@ -65,6 +66,14 @@ class MainViewController: UIViewController {
             selectedItem in
             self.navigate(selectedItem)
         }
+        
+        mDataSource.searchCompletedListener = {
+            print("searchCompleted!")
+            self.tableViewComponents.reloadData()
+        }
+        
+        searchBar.autocapitalizationType = .none
+        searchBar.delegate = mDataSource
     }
     
     private func navigate(_ component: EnumComponents) {

@@ -9,18 +9,22 @@
 import UIKit
 
 typealias TableCellClickListener = ((_ selectedItem:EnumComponents)->())
+typealias TableSearchCompletedListener = (()->())
 
-class TableViewDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
+class TableViewDataSource: NSObject, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     
-    var items:[EnumComponents] {didSet {
-            print("willSet:\(items.count)")
-        }}
+    var items:[EnumComponents]
+    var backUpItems:[EnumComponents]
+    
     var itemIdentifier:String
     
     var itemSelectedListener: TableCellClickListener?
     
+    var searchCompletedListener: TableSearchCompletedListener?
+    
     init(items: [EnumComponents], itemIdentifier: String) {
         self.items = items
+        self.backUpItems = items
         self.itemIdentifier = itemIdentifier
     }
     
@@ -52,5 +56,27 @@ class TableViewDataSource: NSObject, UITableViewDataSource, UITableViewDelegate 
         return items[indexPath.row]
     }
     
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        print("search:\(searchText)")
+        
+        if searchText.isEmpty {
+            items = backUpItems
+            searchCompletedListener?()
+            return
+        }
+        
+        var filterItem = [EnumComponents]()
+        
+        for item in items {
+            if item.rawValue.contains(searchText) {
+                filterItem.append(item)
+            }
+        }
+        
+        items = filterItem
+        
+        searchCompletedListener?()
+    }
 }
 
