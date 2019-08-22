@@ -27,6 +27,7 @@
 		F6411BB1230E363F00C3011C /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411BAF230E363F00C3011C /* AlertViewController.xib */; };
 		F6411BB5230E4E0700C3011C /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411BB3230E4E0700C3011C /* ImagePickerViewController.swift */; };
 		F6411BB6230E4E0700C3011C /* ImagePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411BB4230E4E0700C3011C /* ImagePickerViewController.xib */; };
+		F6DF07B0230E7A0300CC6104 /* DrawCanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF07AF230E7A0300CC6104 /* DrawCanvasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		F6411BAF230E363F00C3011C /* AlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
 		F6411BB3230E4E0700C3011C /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 		F6411BB4230E4E0700C3011C /* ImagePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePickerViewController.xib; sourceTree = "<group>"; };
+		F6DF07AF230E7A0300CC6104 /* DrawCanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawCanvasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 		F6411B8D230D2C8900C3011C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F6DF07AE230E799800CC6104 /* Canvas */,
 				F6411BB2230E4DEE00C3011C /* ImagePicker */,
 				F6411BAD230E35FF00C3011C /* AlertController */,
 				F6411B9C230D339B00C3011C /* TableView */,
@@ -258,6 +261,14 @@
 				F6411BB4230E4E0700C3011C /* ImagePickerViewController.xib */,
 			);
 			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		F6DF07AE230E799800CC6104 /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				F6DF07AF230E7A0300CC6104 /* DrawCanvasViewController.swift */,
+			);
+			path = Canvas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,6 +412,7 @@
 				F6411B98230D2DD100C3011C /* MainViewController.swift in Sources */,
 				F6411BB0230E363F00C3011C /* AlertViewController.swift in Sources */,
 				F6411BB5230E4E0700C3011C /* ImagePickerViewController.swift in Sources */,
+				F6DF07B0230E7A0300CC6104 /* DrawCanvasViewController.swift in Sources */,
 				F6411BA2230D351700C3011C /* TableViewDataSource.swift in Sources */,
 				F6411B94230D2D4C00C3011C /* PickerViewController.swift in Sources */,
 				F6411BA5230D38F500C3011C /* TableViewCell.swift in Sources */,
