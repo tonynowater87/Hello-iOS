@@ -25,6 +25,8 @@
 		F6411BA6230D38F500C3011C /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411BA4230D38F500C3011C /* TableViewCell.xib */; };
 		F6411BB0230E363F00C3011C /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411BAE230E363F00C3011C /* AlertViewController.swift */; };
 		F6411BB1230E363F00C3011C /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411BAF230E363F00C3011C /* AlertViewController.xib */; };
+		F6411BB5230E4E0700C3011C /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411BB3230E4E0700C3011C /* ImagePickerViewController.swift */; };
+		F6411BB6230E4E0700C3011C /* ImagePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411BB4230E4E0700C3011C /* ImagePickerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		F6411BA4230D38F500C3011C /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		F6411BAE230E363F00C3011C /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		F6411BAF230E363F00C3011C /* AlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
+		F6411BB3230E4E0700C3011C /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
+		F6411BB4230E4E0700C3011C /* ImagePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePickerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 		F6411B8D230D2C8900C3011C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F6411BB2230E4DEE00C3011C /* ImagePicker */,
 				F6411BAD230E35FF00C3011C /* AlertController */,
 				F6411B9C230D339B00C3011C /* TableView */,
 				F6411B91230D2D2000C3011C /* Picker */,
@@ -244,6 +249,15 @@
 				F6411BAF230E363F00C3011C /* AlertViewController.xib */,
 			);
 			path = AlertController;
+			sourceTree = "<group>";
+		};
+		F6411BB2230E4DEE00C3011C /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				F6411BB3230E4E0700C3011C /* ImagePickerViewController.swift */,
+				F6411BB4230E4E0700C3011C /* ImagePickerViewController.xib */,
+			);
+			path = ImagePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +372,7 @@
 				F6411B9B230D306B00C3011C /* .gitignore in Resources */,
 				F6411BA6230D38F500C3011C /* TableViewCell.xib in Resources */,
 				F6411BA0230D33B800C3011C /* TableViewViewController.xib in Resources */,
+				F6411BB6230E4E0700C3011C /* ImagePickerViewController.xib in Resources */,
 				F6411B65230D2C1B00C3011C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +400,7 @@
 			files = (
 				F6411B98230D2DD100C3011C /* MainViewController.swift in Sources */,
 				F6411BB0230E363F00C3011C /* AlertViewController.swift in Sources */,
+				F6411BB5230E4E0700C3011C /* ImagePickerViewController.swift in Sources */,
 				F6411BA2230D351700C3011C /* TableViewDataSource.swift in Sources */,
 				F6411B94230D2D4C00C3011C /* PickerViewController.swift in Sources */,
 				F6411BA5230D38F500C3011C /* TableViewCell.swift in Sources */,
