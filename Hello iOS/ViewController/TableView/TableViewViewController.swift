@@ -24,6 +24,10 @@ class TableViewViewController: UIViewController {
         let uiNib = UINib(nibName: "TableViewCell", bundle: nil)
         tableView.register(uiNib, forCellReuseIdentifier: "TableViewCell")
         dataSource = TableViewDataSource(items: [1,2,3,4,5], itemIdentifier: "TableViewCell")
+        dataSource?.itemSelectedListener = {
+            [weak self] selectedCell in
+            print("itemSelectedListener:\(selectedCell)")
+        }
         tableView.dataSource = dataSource
         tableView.delegate = dataSource
     }

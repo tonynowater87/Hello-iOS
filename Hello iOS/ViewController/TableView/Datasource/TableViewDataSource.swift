@@ -8,12 +8,16 @@
 
 import UIKit
 
+typealias TableCellClickListener = ((_ selectedItem:Int)->())
+
 class TableViewDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
     
     var items:[Int] {didSet {
         print("willSet:\\items.count")
         }}
     var itemIdentifier:String
+    
+    var itemSelectedListener: TableCellClickListener?
     
     init(items: [Int], itemIdentifier: String) {
         self.items = items
@@ -32,6 +36,13 @@ class TableViewDataSource: NSObject, UITableViewDataSource, UITableViewDelegate 
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let item = itemAt(indexPath: indexPath) {
+            print("didSelect:\(item)")
+            itemSelectedListener?(item)
+        }
     }
     
     private func itemAt(indexPath:IndexPath) -> Int?{
