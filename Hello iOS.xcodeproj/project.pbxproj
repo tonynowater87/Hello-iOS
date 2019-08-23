@@ -29,6 +29,8 @@
 		F6411BB6230E4E0700C3011C /* ImagePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411BB4230E4E0700C3011C /* ImagePickerViewController.xib */; };
 		F648B1A2230F921B00C100B7 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F648B1A0230F921B00C100B7 /* WebViewViewController.swift */; };
 		F648B1A3230F921B00C100B7 /* WebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F648B1A1230F921B00C100B7 /* WebViewViewController.xib */; };
+		F648B1A7230F98A900C100B7 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F648B1A5230F98A900C100B7 /* MapKitViewController.swift */; };
+		F648B1A8230F98A900C100B7 /* MapKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F648B1A6230F98A900C100B7 /* MapKitViewController.xib */; };
 		F6DF07B0230E7A0300CC6104 /* DrawCanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF07AF230E7A0300CC6104 /* DrawCanvasViewController.swift */; };
 		F6DF07B4230E85A800CC6104 /* CollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF07B2230E85A800CC6104 /* CollectionViewViewController.swift */; };
 		F6DF07B5230E85A800CC6104 /* CollectionViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6DF07B3230E85A800CC6104 /* CollectionViewViewController.xib */; };
@@ -83,6 +85,8 @@
 		F6411BB4230E4E0700C3011C /* ImagePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePickerViewController.xib; sourceTree = "<group>"; };
 		F648B1A0230F921B00C100B7 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		F648B1A1230F921B00C100B7 /* WebViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewViewController.xib; sourceTree = "<group>"; };
+		F648B1A5230F98A900C100B7 /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
+		F648B1A6230F98A900C100B7 /* MapKitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapKitViewController.xib; sourceTree = "<group>"; };
 		F6DF07AF230E7A0300CC6104 /* DrawCanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawCanvasViewController.swift; sourceTree = "<group>"; };
 		F6DF07B2230E85A800CC6104 /* CollectionViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewViewController.swift; sourceTree = "<group>"; };
 		F6DF07B3230E85A800CC6104 /* CollectionViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewViewController.xib; sourceTree = "<group>"; };
@@ -170,6 +174,7 @@
 		F6411B8D230D2C8900C3011C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F648B1A4230F988F00C100B7 /* MapKitView */,
 				F6494D7A230E9ED9004A7451 /* WebView */,
 				F6DF07B1230E859100CC6104 /* CollectionView */,
 				F6DF07AE230E799800CC6104 /* Canvas */,
@@ -277,6 +282,15 @@
 				F6411BB4230E4E0700C3011C /* ImagePickerViewController.xib */,
 			);
 			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		F648B1A4230F988F00C100B7 /* MapKitView */ = {
+			isa = PBXGroup;
+			children = (
+				F648B1A5230F98A900C100B7 /* MapKitViewController.swift */,
+				F648B1A6230F98A900C100B7 /* MapKitViewController.xib */,
+			);
+			path = MapKitView;
 			sourceTree = "<group>";
 		};
 		F6494D7A230E9ED9004A7451 /* WebView */ = {
@@ -440,6 +454,7 @@
 				F6411BA0230D33B800C3011C /* TableViewViewController.xib in Resources */,
 				F6DF07B5230E85A800CC6104 /* CollectionViewViewController.xib in Resources */,
 				F6411BB6230E4E0700C3011C /* ImagePickerViewController.xib in Resources */,
+				F648B1A8230F98A900C100B7 /* MapKitViewController.xib in Resources */,
 				F6411B65230D2C1B00C3011C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +482,7 @@
 			files = (
 				F6411B98230D2DD100C3011C /* MainViewController.swift in Sources */,
 				F6411BB0230E363F00C3011C /* AlertViewController.swift in Sources */,
+				F648B1A7230F98A900C100B7 /* MapKitViewController.swift in Sources */,
 				F6411BB5230E4E0700C3011C /* ImagePickerViewController.swift in Sources */,
 				F6DF07B0230E7A0300CC6104 /* DrawCanvasViewController.swift in Sources */,
 				F6411BA2230D351700C3011C /* TableViewDataSource.swift in Sources */,
