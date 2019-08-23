@@ -11,6 +11,7 @@ import UIKit
 class DrawCanvasViewController: UIViewController {
 
     private let centerPoint: CGPoint = CGPoint(x: 200.0, y: 200.0)
+    private let centerPointTwo: CGPoint = CGPoint(x: 200.0, y: 400.0)
     private let lineLength = CGFloat(100)
     private let radius = CGFloat(50)
     private let squareLength = CGFloat(100)
@@ -22,11 +23,13 @@ class DrawCanvasViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.view.layer.backgroundColor = UIColor.white.cgColor
-        drawCircle()
-        drawSquare()
-        drawCrossLine()
-        drawUpperQuadCurve()
-        drawDownerQuadCurve()
+//        drawCircle()
+//        drawSquare()
+//        drawCrossLine()
+//        drawUpperQuadCurve()
+//        drawDownerQuadCurve()
+        drawLoadingCircle()
+        //playBackgroundAnimation()
     }
     
     private func drawCrossLine() {
@@ -142,6 +145,50 @@ class DrawCanvasViewController: UIViewController {
         self.view.layer.addSublayer(layer)
     }
 
+    
+    private func drawLoadingCircle() {
+        let path = UIBezierPath()
+        path.addArc(withCenter: centerPointTwo, radius: radius, startAngle: 0, endAngle: 2*CGFloat.pi, clockwise: true)
+
+        let layer = CAShapeLayer()
+        layer.path = path.cgPath
+        layer.strokeColor = UIColor.black.cgColor
+        layer.fillColor = UIColor.clear.cgColor
+        layer.lineWidth = lineWidth
+        
+        let animationGroup = CAAnimationGroup()
+
+        //strokeStart 是往畫筆開始的地方
+        let drawClockwiseAnimation = CAKeyframeAnimation(keyPath: "strokeStart")
+        drawClockwiseAnimation.values = [0.0, 0.0, 0.8, 1]
+        drawClockwiseAnimation.keyTimes = [0.0, 0.1, 0.9, 1]
+        
+        //strokeEnd 是往畫筆結束的地方
+        let drawCounterClockwiseAnimation = CAKeyframeAnimation(keyPath: "strokeEnd")
+        drawCounterClockwiseAnimation.values = [0.0, 0.3, 0.9, 1]
+        drawCounterClockwiseAnimation.keyTimes = [0.0, 0.1, 0.9, 1]
+        
+        animationGroup.animations = [drawClockwiseAnimation, drawCounterClockwiseAnimation]
+        animationGroup.duration = 4
+        animationGroup.repeatCount = .infinity
+        animationGroup.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
+        
+        layer.add(animationGroup, forKey: "loading animation")
+        self.view.layer.addSublayer(layer)
+    }
+    
+    private func playBackgroundAnimation() {
+        let backgroundAnimation = CAKeyframeAnimation(keyPath: "backgroundColor")
+        backgroundAnimation.values = [UIColor.red.cgColor, UIColor.green.cgColor, UIColor.blue.cgColor, UIColor.brown.cgColor]
+        backgroundAnimation.keyTimes = [0, 0.25, 0.5, 1]
+        
+        let animGroup = CAAnimationGroup()
+        animGroup.animations = [backgroundAnimation]
+        animGroup.duration = 4
+        animGroup.repeatCount = .infinity
+        
+        self.view.layer.add(animGroup, forKey: "bg animation")
+    }
     
     /*
     // MARK: - Navigation
