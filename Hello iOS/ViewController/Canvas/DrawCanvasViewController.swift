@@ -15,6 +15,8 @@ class DrawCanvasViewController: UIViewController {
     private let radius = CGFloat(50)
     private let squareLength = CGFloat(100)
     
+    private let lineWidth = CGFloat(3)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,6 +25,8 @@ class DrawCanvasViewController: UIViewController {
         drawCircle()
         drawSquare()
         drawCrossLine()
+        drawUpperQuadCurve()
+        drawDownerQuadCurve()
     }
     
     private func drawCrossLine() {
@@ -38,6 +42,7 @@ class DrawCanvasViewController: UIViewController {
         let layer = CAShapeLayer()
         layer.path = path.cgPath
         layer.strokeColor = UIColor.red.cgColor
+        
         self.view.layer.addSublayer(layer)
     }
     
@@ -49,12 +54,29 @@ class DrawCanvasViewController: UIViewController {
         layer.path = path.cgPath
         layer.strokeColor = UIColor.black.cgColor
         layer.fillColor = UIColor.green.cgColor
+        
+        //strokeStart 是往畫筆開始的地方
+        let drawClockwiseAnimation = CABasicAnimation(keyPath: "strokeStart")
+        drawClockwiseAnimation.fromValue = 0.5
+        drawClockwiseAnimation.toValue = 0
+        drawClockwiseAnimation.duration = 3
+
+        //strokeEnd 是往畫筆結束的地方
+        let drawCounterClockwiseAnimation = CABasicAnimation(keyPath: "strokeEnd")
+        drawCounterClockwiseAnimation.fromValue = 0.5
+        drawCounterClockwiseAnimation.toValue = 1
+        drawCounterClockwiseAnimation.duration = 3
+
+        layer.add(drawClockwiseAnimation, forKey: "drawClockwiseAnimation")
+        layer.add(drawCounterClockwiseAnimation, forKey: "drawCounterClockwiseAnimation")
         self.view.layer.addSublayer(layer)
     }
     
     private func drawSquare() {
-        let path = UIBezierPath()
+        
         let startPoint = CGPoint(x: centerPoint.x - radius, y: centerPoint.y - radius)
+        
+        let path = UIBezierPath()
         path.move(to: startPoint)
         path.addLine(to: CGPoint(x: startPoint.x + squareLength, y: startPoint.y))
         path.addLine(to: CGPoint(x: startPoint.x + squareLength, y: startPoint.y + squareLength))
@@ -67,7 +89,60 @@ class DrawCanvasViewController: UIViewController {
         layer.fillColor = UIColor.clear.cgColor
         self.view.layer.addSublayer(layer)
     }
+    
+    private func drawUpperQuadCurve() {
+        
+        let startPoint = CGPoint(x: centerPoint.x - radius, y: centerPoint.y)
+        let controlPoint1 = CGPoint(x: centerPoint.x, y: centerPoint.y - radius)
+        let endPoint = CGPoint(x: centerPoint.x + radius, y: centerPoint.y)
+        
+        let path = UIBezierPath()
+        path.move(to: startPoint)
+        path.addQuadCurve(to: endPoint, controlPoint: controlPoint1)
+        
+        let layer = CAShapeLayer()
+        layer.path = path.cgPath
+        layer.strokeColor = UIColor.darkGray.cgColor
+        layer.fillColor = UIColor.clear.cgColor
+        layer.lineWidth = lineWidth
+        
+        let drawAnimation = CABasicAnimation(keyPath: "strokeStart")
+        drawAnimation.fromValue = 1
+        drawAnimation.toValue = 0
+        drawAnimation.duration = 3
+        
+        layer.add(drawAnimation, forKey: "drawDownerQuadCurve")
+        
+        self.view.layer.addSublayer(layer)
+    }
 
+    private func drawDownerQuadCurve() {
+        
+        let startPoint = CGPoint(x: centerPoint.x - radius, y: centerPoint.y)
+        let controlPoint1 = CGPoint(x: centerPoint.x, y: centerPoint.y + radius)
+        let endPoint = CGPoint(x: centerPoint.x + radius, y: centerPoint.y)
+        
+        let path = UIBezierPath()
+        path.move(to: startPoint)
+        path.addQuadCurve(to: endPoint, controlPoint: controlPoint1)
+        
+        let layer = CAShapeLayer()
+        layer.path = path.cgPath
+        layer.strokeColor = UIColor.darkGray.cgColor
+        layer.fillColor = UIColor.clear.cgColor
+        layer.lineWidth = lineWidth
+        
+        let drawAnimation = CABasicAnimation(keyPath: "strokeEnd")
+        drawAnimation.fromValue = 0
+        drawAnimation.toValue = 1
+        drawAnimation.duration = 3
+        
+        layer.add(drawAnimation, forKey: "drawDownerQuadCurve")
+        
+        self.view.layer.addSublayer(layer)
+    }
+
+    
     /*
     // MARK: - Navigation
 
