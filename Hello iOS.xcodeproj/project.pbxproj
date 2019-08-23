@@ -27,6 +27,8 @@
 		F6411BB1230E363F00C3011C /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411BAF230E363F00C3011C /* AlertViewController.xib */; };
 		F6411BB5230E4E0700C3011C /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411BB3230E4E0700C3011C /* ImagePickerViewController.swift */; };
 		F6411BB6230E4E0700C3011C /* ImagePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411BB4230E4E0700C3011C /* ImagePickerViewController.xib */; };
+		F648B1A2230F921B00C100B7 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F648B1A0230F921B00C100B7 /* WebViewViewController.swift */; };
+		F648B1A3230F921B00C100B7 /* WebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F648B1A1230F921B00C100B7 /* WebViewViewController.xib */; };
 		F6DF07B0230E7A0300CC6104 /* DrawCanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF07AF230E7A0300CC6104 /* DrawCanvasViewController.swift */; };
 		F6DF07B4230E85A800CC6104 /* CollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF07B2230E85A800CC6104 /* CollectionViewViewController.swift */; };
 		F6DF07B5230E85A800CC6104 /* CollectionViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6DF07B3230E85A800CC6104 /* CollectionViewViewController.xib */; };
@@ -79,6 +81,8 @@
 		F6411BAF230E363F00C3011C /* AlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
 		F6411BB3230E4E0700C3011C /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 		F6411BB4230E4E0700C3011C /* ImagePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePickerViewController.xib; sourceTree = "<group>"; };
+		F648B1A0230F921B00C100B7 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		F648B1A1230F921B00C100B7 /* WebViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewViewController.xib; sourceTree = "<group>"; };
 		F6DF07AF230E7A0300CC6104 /* DrawCanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawCanvasViewController.swift; sourceTree = "<group>"; };
 		F6DF07B2230E85A800CC6104 /* CollectionViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewViewController.swift; sourceTree = "<group>"; };
 		F6DF07B3230E85A800CC6104 /* CollectionViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewViewController.xib; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 		F6411B8D230D2C8900C3011C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F6494D7A230E9ED9004A7451 /* WebView */,
 				F6DF07B1230E859100CC6104 /* CollectionView */,
 				F6DF07AE230E799800CC6104 /* Canvas */,
 				F6411BB2230E4DEE00C3011C /* ImagePicker */,
@@ -272,6 +277,15 @@
 				F6411BB4230E4E0700C3011C /* ImagePickerViewController.xib */,
 			);
 			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		F6494D7A230E9ED9004A7451 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				F648B1A0230F921B00C100B7 /* WebViewViewController.swift */,
+				F648B1A1230F921B00C100B7 /* WebViewViewController.xib */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 		F6DF07AE230E799800CC6104 /* Canvas */ = {
@@ -419,6 +433,7 @@
 				F6411B67230D2C1D00C3011C /* Assets.xcassets in Resources */,
 				F6411BB1230E363F00C3011C /* AlertViewController.xib in Resources */,
 				F6411B99230D2DD100C3011C /* MainViewController.xib in Resources */,
+				F648B1A3230F921B00C100B7 /* WebViewViewController.xib in Resources */,
 				F6411B95230D2D4C00C3011C /* PickerViewController.xib in Resources */,
 				F6411B9B230D306B00C3011C /* .gitignore in Resources */,
 				F6411BA6230D38F500C3011C /* TableViewCell.xib in Resources */,
@@ -458,6 +473,7 @@
 				F6411B94230D2D4C00C3011C /* PickerViewController.swift in Sources */,
 				F6411BA5230D38F500C3011C /* TableViewCell.swift in Sources */,
 				F6DF07B4230E85A800CC6104 /* CollectionViewViewController.swift in Sources */,
+				F648B1A2230F921B00C100B7 /* WebViewViewController.swift in Sources */,
 				F6411B9F230D33B800C3011C /* TableViewViewController.swift in Sources */,
 				F6DF07B9230E8D9000CC6104 /* CollectionViewCell.swift in Sources */,
 				F6411B60230D2C1B00C3011C /* AppDelegate.swift in Sources */,

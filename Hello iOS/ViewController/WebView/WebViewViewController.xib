@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewViewController" customModule="Hello_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="textFieldURL" destination="NWD-5V-e25" id="I1w-XD-BjO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="fof-91-GND" id="szf-lr-SGv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fof-91-GND">
+                    <rect key="frame" x="0.0" y="54" width="375" height="613"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NWD-5V-e25">
+                    <rect key="frame" x="58" y="20" width="237" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U48-Oj-kgi">
+                    <rect key="frame" x="16" y="19" width="34" height="30"/>
+                    <state key="normal" title="Back"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="hRg-HB-FgI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwM-ja-thB">
+                    <rect key="frame" x="303" y="20" width="56" height="30"/>
+                    <state key="normal" title="Forward"/>
+                    <connections>
+                        <action selector="forward:" destination="-1" eventType="touchUpInside" id="Wc6-fq-5nr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fof-91-GND" secondAttribute="trailing" id="9Aq-h6-fhN"/>
+                <constraint firstItem="NWD-5V-e25" firstAttribute="leading" secondItem="U48-Oj-kgi" secondAttribute="trailing" constant="8" id="B5s-lP-tL0"/>
+                <constraint firstItem="U48-Oj-kgi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="BkB-Sr-UTk"/>
+                <constraint firstItem="U48-Oj-kgi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="PCV-yN-1Zs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fof-91-GND" secondAttribute="bottom" id="X9E-WR-3sZ"/>
+                <constraint firstItem="gwM-ja-thB" firstAttribute="leading" secondItem="NWD-5V-e25" secondAttribute="trailing" constant="8" id="YPu-eK-rfA"/>
+                <constraint firstItem="gwM-ja-thB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="eyd-2W-plp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gwM-ja-thB" secondAttribute="trailing" constant="16" id="jAP-ca-c6F"/>
+                <constraint firstItem="fof-91-GND" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kRi-h0-L5z"/>
+                <constraint firstItem="fof-91-GND" firstAttribute="top" secondItem="NWD-5V-e25" secondAttribute="bottom" constant="4" id="r42-FM-Rjd"/>
+                <constraint firstItem="NWD-5V-e25" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wSq-OI-lbm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="55.200000000000003" y="48.125937031484263"/>
+        </view>
+    </objects>
+</document>
