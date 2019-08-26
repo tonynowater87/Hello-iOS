@@ -18,6 +18,7 @@ enum EnumComponents: String {
     case WKWebView
     case MKMapView
     case SVProgressHUD
+    case NFC
 }
 
 class MainViewController: UIViewController {
@@ -25,7 +26,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var tableViewComponents: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    private static let components = [EnumComponents.UIPickerView, .UITableView, .UIAlertController, .UIImagePicker, .DrawCanvas, .UICollectionView, .WKWebView, .MKMapView, .SVProgressHUD]
+    private static let components = [EnumComponents.UIPickerView, .UITableView, .UIAlertController, .UIImagePicker, .DrawCanvas, .UICollectionView, .WKWebView, .MKMapView, .SVProgressHUD, .NFC]
     private static let CELL_ID = "TableViewCell"
     
     private let mDataSource: TableViewDataSource = TableViewDataSource(items: MainViewController.components, itemIdentifier: MainViewController.CELL_ID)
@@ -39,27 +40,27 @@ class MainViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("viewWillAppear")
+//        print("viewWillAppear")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("viewDidAppear")
+//        print("viewDidAppear")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print("viewWillDisappear")
+//        print("viewWillDisappear")
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print("viewDidDisappear")
+//        print("viewDidDisappear")
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        print("didReceiveMemoryWarning")
+//        print("didReceiveMemoryWarning")
     }
     
     private func setUpTableView() {
@@ -102,6 +103,8 @@ class MainViewController: UIViewController {
             navigationController?.pushViewController(MapKitViewController(), animated: true)
         case .SVProgressHUD:
             navigationController?.pushViewController(SVProgressHUDViewController(), animated: true)
+        case .NFC:
+            navigationController?.pushViewController(NFCViewController(), animated: true)
         default:
             fatalError("illegal argument:\(component)")
         }

@@ -12,6 +12,8 @@
 		D6182AD908B5072A2483164B /* Pods_Hello_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715487801ED31B032476B841 /* Pods_Hello_iOSTests.framework */; };
 		F63F22F1231179D600EC123D /* SVProgressHUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63F22EF231179D600EC123D /* SVProgressHUDViewController.swift */; };
 		F63F22F2231179D600EC123D /* SVProgressHUDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63F22F0231179D600EC123D /* SVProgressHUDViewController.xib */; };
+		F63F22F62313970A00EC123D /* NFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63F22F42313970A00EC123D /* NFCViewController.swift */; };
+		F63F22F72313970A00EC123D /* NFCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63F22F52313970A00EC123D /* NFCViewController.xib */; };
 		F6411B60230D2C1B00C3011C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411B5F230D2C1B00C3011C /* AppDelegate.swift */; };
 		F6411B65230D2C1B00C3011C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6411B63230D2C1B00C3011C /* Main.storyboard */; };
 		F6411B67230D2C1D00C3011C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6411B66230D2C1D00C3011C /* Assets.xcassets */; };
@@ -73,6 +75,9 @@
 		BC5468B811F1231BE0574D98 /* Pods-Hello iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Hello iOSTests/Pods-Hello iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		F63F22EF231179D600EC123D /* SVProgressHUDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVProgressHUDViewController.swift; sourceTree = "<group>"; };
 		F63F22F0231179D600EC123D /* SVProgressHUDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SVProgressHUDViewController.xib; sourceTree = "<group>"; };
+		F63F22F42313970A00EC123D /* NFCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCViewController.swift; sourceTree = "<group>"; };
+		F63F22F52313970A00EC123D /* NFCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NFCViewController.xib; sourceTree = "<group>"; };
+		F63F22F8231399D300EC123D /* Hello iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hello iOS.entitlements"; sourceTree = "<group>"; };
 		F6411B5C230D2C1B00C3011C /* Hello iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6411B5F230D2C1B00C3011C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6411B64230D2C1B00C3011C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,7 +94,7 @@
 		F6411B93230D2D4C00C3011C /* PickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
 		F6411B96230D2DD100C3011C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F6411B97230D2DD100C3011C /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		F6411B9A230D306B00C3011C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = "Hello iOS/.gitignore"; sourceTree = "<group>"; };
+		F6411B9A230D306B00C3011C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F6411B9D230D33B800C3011C /* TableViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewController.swift; sourceTree = "<group>"; };
 		F6411B9E230D33B800C3011C /* TableViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewViewController.xib; sourceTree = "<group>"; };
 		F6411BA1230D351700C3011C /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
@@ -171,6 +176,15 @@
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
+		F63F22F3231396ED00EC123D /* NFC */ = {
+			isa = PBXGroup;
+			children = (
+				F63F22F42313970A00EC123D /* NFCViewController.swift */,
+				F63F22F52313970A00EC123D /* NFCViewController.xib */,
+			);
+			path = NFC;
+			sourceTree = "<group>";
+		};
 		F6411B53230D2C1B00C3011C = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +211,7 @@
 		F6411B5E230D2C1B00C3011C /* Hello iOS */ = {
 			isa = PBXGroup;
 			children = (
+				F63F22F8231399D300EC123D /* Hello iOS.entitlements */,
 				F6411B90230D2CDD00C3011C /* Resource */,
 				F6411B8F230D2CD000C3011C /* Storyboard */,
 				F6411B8D230D2C8900C3011C /* ViewController */,
@@ -227,6 +242,7 @@
 		F6411B8D230D2C8900C3011C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F63F22F3231396ED00EC123D /* NFC */,
 				F63F22EE230FE5AA00EC123D /* SVProgressHUD */,
 				F648B1A4230F988F00C100B7 /* MapKitView */,
 				F6494D7A230E9ED9004A7451 /* WebView */,
@@ -464,6 +480,11 @@
 				TargetAttributes = {
 					F6411B5B230D2C1B00C3011C = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.NearFieldCommunicationTagReading = {
+								enabled = 1;
+							};
+						};
 					};
 					F6411B6F230D2C1D00C3011C = {
 						CreatedOnToolsVersion = 10.0;
@@ -512,6 +533,7 @@
 				F6411BA6230D38F500C3011C /* TableViewCell.xib in Resources */,
 				F6411BA0230D33B800C3011C /* TableViewViewController.xib in Resources */,
 				F6DF07B5230E85A800CC6104 /* CollectionViewViewController.xib in Resources */,
+				F63F22F72313970A00EC123D /* NFCViewController.xib in Resources */,
 				F6411BB6230E4E0700C3011C /* ImagePickerViewController.xib in Resources */,
 				F648B1A8230F98A900C100B7 /* MapKitViewController.xib in Resources */,
 				F6411B65230D2C1B00C3011C /* Main.storyboard in Resources */,
@@ -633,6 +655,7 @@
 				F6411BA2230D351700C3011C /* TableViewDataSource.swift in Sources */,
 				F63F22F1231179D600EC123D /* SVProgressHUDViewController.swift in Sources */,
 				F6411B94230D2D4C00C3011C /* PickerViewController.swift in Sources */,
+				F63F22F62313970A00EC123D /* NFCViewController.swift in Sources */,
 				F6411BA5230D38F500C3011C /* TableViewCell.swift in Sources */,
 				F6DF07B4230E85A800CC6104 /* CollectionViewViewController.swift in Sources */,
 				F648B1A2230F921B00C100B7 /* WebViewViewController.swift in Sources */,
@@ -815,7 +838,9 @@
 			baseConfigurationReference = 9A06AF9B880DA9A7185B3169 /* Pods-Hello iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Hello iOS/Hello iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3PL947DA85;
 				INFOPLIST_FILE = "Hello iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -833,7 +858,9 @@
 			baseConfigurationReference = 16915F12D373BBCF77E59EB1 /* Pods-Hello iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Hello iOS/Hello iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3PL947DA85;
 				INFOPLIST_FILE = "Hello iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
