@@ -1,0 +1,8 @@
+/* 
+  Localizable.strings
+  Hello iOS
+
+  Created by Stan on 2019/8/26.
+  Copyright © 2019 Tony. All rights reserved.
+*/
+"Hello" = "Hello iOS";

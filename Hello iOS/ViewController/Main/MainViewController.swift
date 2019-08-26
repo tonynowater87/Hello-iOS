@@ -23,6 +23,7 @@ enum EnumComponents: String {
 
 class MainViewController: UIViewController {
     
+    @IBOutlet weak var helloIOSLabel: UILabel!
     @IBOutlet weak var tableViewComponents: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -36,6 +37,7 @@ class MainViewController: UIViewController {
         print("viewDidLoad")
         // Do any additional setup after loading the view, typically from a
         setUpTableView()
+        helloIOSLabel.text = "Hello".localized()
     }
     
     override func viewWillAppear(_ animated: Bool) {

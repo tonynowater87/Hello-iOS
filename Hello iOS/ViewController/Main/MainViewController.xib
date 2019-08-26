@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Hello_iOS" customModuleProvider="target">
             <connections>
+                <outlet property="helloIOSLabel" destination="BXI-ll-DZD" id="Dqz-to-DK6"/>
                 <outlet property="searchBar" destination="ror-aO-rNo" id="2PL-T3-YxY"/>
                 <outlet property="tableViewComponents" destination="Xgi-zd-lOu" id="lG6-ia-cjR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
