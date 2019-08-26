@@ -58,10 +58,11 @@ class TableViewDataSource: NSObject, UITableViewDataSource, UITableViewDelegate,
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
+        items = backUpItems
+        
         print("search:\(searchText)")
         
         if searchText.isEmpty {
-            items = backUpItems
             searchCompletedListener?()
             return
         }
