@@ -17,6 +17,7 @@ enum EnumComponents: String {
     case UICollectionView
     case WKWebView
     case MKMapView
+    case SVProgressHUD
 }
 
 class MainViewController: UIViewController {
@@ -24,7 +25,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var tableViewComponents: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    private static let components = [EnumComponents.UIPickerView, .UITableView, .UIAlertController, .UIImagePicker, .DrawCanvas, .UICollectionView, .WKWebView, .MKMapView]
+    private static let components = [EnumComponents.UIPickerView, .UITableView, .UIAlertController, .UIImagePicker, .DrawCanvas, .UICollectionView, .WKWebView, .MKMapView, .SVProgressHUD]
     private static let CELL_ID = "TableViewCell"
     
     private let mDataSource: TableViewDataSource = TableViewDataSource(items: MainViewController.components, itemIdentifier: MainViewController.CELL_ID)
@@ -99,6 +100,8 @@ class MainViewController: UIViewController {
             navigationController?.pushViewController(WebViewViewController(), animated: true)
         case .MKMapView:
             navigationController?.pushViewController(MapKitViewController(), animated: true)
+        case .SVProgressHUD:
+            navigationController?.pushViewController(SVProgressHUDViewController(), animated: true)
         default:
             fatalError("illegal argument:\(component)")
         }
