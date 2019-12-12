@@ -16,6 +16,8 @@
 		F63F22F72313970A00EC123D /* NFCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63F22F52313970A00EC123D /* NFCViewController.xib */; };
 		F63F22FD2313B87700EC123D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F63F22FF2313B87700EC123D /* Localizable.strings */; };
 		F63F23032313BD5900EC123D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63F23022313BD5900EC123D /* Extension.swift */; };
+		F63F23072313C16B00EC123D /* HelloMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63F23052313C16B00EC123D /* HelloMLViewController.swift */; };
+		F63F23082313C16B00EC123D /* HelloMLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63F23062313C16B00EC123D /* HelloMLViewController.xib */; };
 		F6411B60230D2C1B00C3011C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411B5F230D2C1B00C3011C /* AppDelegate.swift */; };
 		F6411B65230D2C1B00C3011C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6411B63230D2C1B00C3011C /* Main.storyboard */; };
 		F6411B67230D2C1D00C3011C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6411B66230D2C1D00C3011C /* Assets.xcassets */; };
@@ -85,6 +87,8 @@
 		F63F22FE2313B87700EC123D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F63F23002313B87E00EC123D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F63F23022313BD5900EC123D /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		F63F23052313C16B00EC123D /* HelloMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloMLViewController.swift; sourceTree = "<group>"; };
+		F63F23062313C16B00EC123D /* HelloMLViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelloMLViewController.xib; sourceTree = "<group>"; };
 		F6411B5C230D2C1B00C3011C /* Hello iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6411B5F230D2C1B00C3011C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6411B64230D2C1B00C3011C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -200,6 +204,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F63F23042313C14C00EC123D /* CoreML */ = {
+			isa = PBXGroup;
+			children = (
+				F63F23052313C16B00EC123D /* HelloMLViewController.swift */,
+				F63F23062313C16B00EC123D /* HelloMLViewController.xib */,
+			);
+			path = CoreML;
+			sourceTree = "<group>";
+		};
 		F6411B53230D2C1B00C3011C = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +270,7 @@
 		F6411B8D230D2C8900C3011C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F63F23042313C14C00EC123D /* CoreML */,
 				F63F23012313BD4E00EC123D /* Extensions */,
 				F63F22F3231396ED00EC123D /* NFC */,
 				F63F22EE230FE5AA00EC123D /* SVProgressHUD */,
@@ -497,6 +511,7 @@
 				TargetAttributes = {
 					F6411B5B230D2C1B00C3011C = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1130;
 						SystemCapabilities = {
 							com.apple.NearFieldCommunicationTagReading = {
 								enabled = 1;
@@ -505,10 +520,12 @@
 					};
 					F6411B6F230D2C1D00C3011C = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1130;
 						TestTargetID = F6411B5B230D2C1B00C3011C;
 					};
 					F6411B7A230D2C1D00C3011C = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1130;
 						TestTargetID = F6411B5B230D2C1B00C3011C;
 					};
 				};
@@ -520,6 +537,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = F6411B53230D2C1B00C3011C;
 			productRefGroup = F6411B5D230D2C1B00C3011C /* Products */;
@@ -546,6 +564,7 @@
 				F63F22F2231179D600EC123D /* SVProgressHUDViewController.xib in Resources */,
 				F6411B99230D2DD100C3011C /* MainViewController.xib in Resources */,
 				F648B1A3230F921B00C100B7 /* WebViewViewController.xib in Resources */,
+				F63F23082313C16B00EC123D /* HelloMLViewController.xib in Resources */,
 				F6411B95230D2D4C00C3011C /* PickerViewController.xib in Resources */,
 				F6411B9B230D306B00C3011C /* .gitignore in Resources */,
 				F6411BA6230D38F500C3011C /* TableViewCell.xib in Resources */,
@@ -671,6 +690,7 @@
 				F6411BB5230E4E0700C3011C /* ImagePickerViewController.swift in Sources */,
 				F6DF07B0230E7A0300CC6104 /* DrawCanvasViewController.swift in Sources */,
 				F6411BA2230D351700C3011C /* TableViewDataSource.swift in Sources */,
+				F63F23072313C16B00EC123D /* HelloMLViewController.swift in Sources */,
 				F63F22F1231179D600EC123D /* SVProgressHUDViewController.swift in Sources */,
 				F6411B94230D2D4C00C3011C /* PickerViewController.swift in Sources */,
 				F63F22F62313970A00EC123D /* NFCViewController.swift in Sources */,
@@ -880,7 +900,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tonynowater.Hello-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -900,7 +920,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tonynowater.Hello-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -920,7 +940,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tonynowater.Hello-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hello iOS.app/Hello iOS";
 			};
@@ -941,7 +961,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tonynowater.Hello-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hello iOS.app/Hello iOS";
 			};
@@ -961,7 +981,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tonynowater.Hello-iOSUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Hello iOS";
 			};
@@ -981,7 +1001,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tonynowater.Hello-iOSUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Hello iOS";
 			};
