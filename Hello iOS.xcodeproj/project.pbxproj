@@ -42,6 +42,7 @@
 		F648B1A3230F921B00C100B7 /* WebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F648B1A1230F921B00C100B7 /* WebViewViewController.xib */; };
 		F648B1A7230F98A900C100B7 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F648B1A5230F98A900C100B7 /* MapKitViewController.swift */; };
 		F648B1A8230F98A900C100B7 /* MapKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F648B1A6230F98A900C100B7 /* MapKitViewController.xib */; };
+		F6D4E0B323A3895300CBFB43 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6D4E0B523A3895300CBFB43 /* InfoPlist.strings */; };
 		F6DF07B0230E7A0300CC6104 /* DrawCanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF07AF230E7A0300CC6104 /* DrawCanvasViewController.swift */; };
 		F6DF07B4230E85A800CC6104 /* CollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF07B2230E85A800CC6104 /* CollectionViewViewController.swift */; };
 		F6DF07B5230E85A800CC6104 /* CollectionViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6DF07B3230E85A800CC6104 /* CollectionViewViewController.xib */; };
@@ -119,6 +120,8 @@
 		F648B1A1230F921B00C100B7 /* WebViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewViewController.xib; sourceTree = "<group>"; };
 		F648B1A5230F98A900C100B7 /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
 		F648B1A6230F98A900C100B7 /* MapKitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapKitViewController.xib; sourceTree = "<group>"; };
+		F6D4E0B423A3895300CBFB43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6D4E0B623A3895600CBFB43 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		F6DF07AF230E7A0300CC6104 /* DrawCanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawCanvasViewController.swift; sourceTree = "<group>"; };
 		F6DF07B2230E85A800CC6104 /* CollectionViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewViewController.swift; sourceTree = "<group>"; };
 		F6DF07B3230E85A800CC6104 /* CollectionViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewViewController.xib; sourceTree = "<group>"; };
@@ -312,6 +315,7 @@
 			children = (
 				F6411B66230D2C1D00C3011C /* Assets.xcassets */,
 				F63F22FF2313B87700EC123D /* Localizable.strings */,
+				F6D4E0B523A3895300CBFB43 /* InfoPlist.strings */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -566,6 +570,7 @@
 				F648B1A3230F921B00C100B7 /* WebViewViewController.xib in Resources */,
 				F63F23082313C16B00EC123D /* HelloMLViewController.xib in Resources */,
 				F6411B95230D2D4C00C3011C /* PickerViewController.xib in Resources */,
+				F6D4E0B323A3895300CBFB43 /* InfoPlist.strings in Resources */,
 				F6411B9B230D306B00C3011C /* .gitignore in Resources */,
 				F6411BA6230D38F500C3011C /* TableViewCell.xib in Resources */,
 				F6411BA0230D33B800C3011C /* TableViewViewController.xib in Resources */,
@@ -762,6 +767,15 @@
 				F63F22FA2313B82100EC123D /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F6D4E0B523A3895300CBFB43 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6D4E0B423A3895300CBFB43 /* en */,
+				F6D4E0B623A3895600CBFB43 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -22,12 +22,12 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string></string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Do you allow app to access your location?</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string></string>
+	<key>NSFileProviderDomainUsageDescription</key>
+	<string></string>
 	<key>NFCReaderUsageDescription</key>
-	<string>Do you allow app to access your NFC Scan Function?</string>
+	<string></string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
