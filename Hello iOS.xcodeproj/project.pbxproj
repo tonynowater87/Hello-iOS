@@ -44,6 +44,7 @@
 		F648B1A3230F921B00C100B7 /* WebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F648B1A1230F921B00C100B7 /* WebViewViewController.xib */; };
 		F648B1A7230F98A900C100B7 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F648B1A5230F98A900C100B7 /* MapKitViewController.swift */; };
 		F648B1A8230F98A900C100B7 /* MapKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F648B1A6230F98A900C100B7 /* MapKitViewController.xib */; };
+		F69145C223AC762E0076BE4C /* DispatchQueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69145C123AC762E0076BE4C /* DispatchQueueTest.swift */; };
 		F6D4E0B323A3895300CBFB43 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6D4E0B523A3895300CBFB43 /* InfoPlist.strings */; };
 		F6DF07B0230E7A0300CC6104 /* DrawCanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF07AF230E7A0300CC6104 /* DrawCanvasViewController.swift */; };
 		F6DF07B4230E85A800CC6104 /* CollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF07B2230E85A800CC6104 /* CollectionViewViewController.swift */; };
@@ -124,6 +125,7 @@
 		F648B1A1230F921B00C100B7 /* WebViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewViewController.xib; sourceTree = "<group>"; };
 		F648B1A5230F98A900C100B7 /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
 		F648B1A6230F98A900C100B7 /* MapKitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapKitViewController.xib; sourceTree = "<group>"; };
+		F69145C123AC762E0076BE4C /* DispatchQueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueTest.swift; sourceTree = "<group>"; };
 		F6D4E0B423A3895300CBFB43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F6D4E0B623A3895600CBFB43 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		F6DF07AF230E7A0300CC6104 /* DrawCanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawCanvasViewController.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 			children = (
 				F6411B74230D2C1D00C3011C /* Hello_iOSTests.swift */,
 				F6411B76230D2C1D00C3011C /* Info.plist */,
+				F69145C123AC762E0076BE4C /* DispatchQueueTest.swift */,
 			);
 			path = "Hello iOSTests";
 			sourceTree = "<group>";
@@ -731,6 +734,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6411B75230D2C1D00C3011C /* Hello_iOSTests.swift in Sources */,
+				F69145C223AC762E0076BE4C /* DispatchQueueTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

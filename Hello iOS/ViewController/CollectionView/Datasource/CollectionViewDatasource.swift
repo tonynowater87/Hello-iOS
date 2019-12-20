@@ -20,6 +20,10 @@ class CollectionViewDatasource: NSObject, UICollectionViewDelegate, UICollection
     private var items: [String]
     private var itemIdentifier:String
     
+    var counts: Int {
+        get { return items.count}
+    }
+    
     var callback: callbackAddRandomNumber?
     
     init(items: [String], itemIdentifier: String) {
@@ -37,6 +41,8 @@ class CollectionViewDatasource: NSObject, UICollectionViewDelegate, UICollection
         if let item = itemAt(indexPath: indexPath) {
             cell.setText(text: item)
         }
+        
+        print(String(format: "[DEBUG] datasource row:%d, section:%d", indexPath.row, indexPath.section))
         
         return cell
     }
