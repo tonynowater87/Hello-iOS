@@ -19,6 +19,8 @@ enum EnumComponents: String {
     case MKMapView
     case SVProgressHUD
     case NFC
+    case HelloML
+    case PassDataBetweenVC
 }
 
 class MainViewController: UIViewController {
@@ -27,7 +29,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var tableViewComponents: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    private static let components = [EnumComponents.UIPickerView, .UITableView, .UIAlertController, .UIImagePicker, .DrawCanvas, .UICollectionView, .WKWebView, .MKMapView, .SVProgressHUD, .NFC]
+    private static let components = [EnumComponents.UIPickerView, .UITableView, .UIAlertController, .UIImagePicker, .DrawCanvas, .UICollectionView, .WKWebView, .MKMapView, .SVProgressHUD, .NFC, .HelloML, .PassDataBetweenVC]
     private static let CELL_ID = "TableViewCell"
     
     private let mDataSource: TableViewDataSource = TableViewDataSource(items: MainViewController.components, itemIdentifier: MainViewController.CELL_ID)
@@ -107,19 +109,25 @@ class MainViewController: UIViewController {
             navigationController?.pushViewController(SVProgressHUDViewController(), animated: true)
         case .NFC:
             navigationController?.pushViewController(NFCViewController(), animated: true)
+        case .HelloML:
+            navigationController?.pushViewController(HelloMLViewController(), animated: true)
+        case .PassDataBetweenVC:
+            let vc = PassDataViewController()
+            vc.passDataDelegate = self
+            navigationController?.pushViewController(vc, animated: true)
         default:
             fatalError("illegal argument:\(component)")
         }
     }
-    
-    @IBAction func navigateToUIPickerView(_ sender: UIButton) {
-        //change page from bottom to top
-        //present(PickerViewController(), animated: true, completion: nil)
-        //dismiss(animated: true, completion: nil)
-        
-        //change page from left to right
-        navigationController?.pushViewController(PickerViewController(), animated: true)
-        //navigationController?.popViewController(animated: true)
-    }
 }
 
+extension MainViewController: PassDataDelegate {
+    func onData(data: String) {
+        print("data back to main:\(data)")
+        self.helloIOSLabel.text = String(format: "%@ %@", "Hello".localized(), data)
+    }
+    
+    func getData() -> String {
+        return "Parameter~~"
+    }
+}

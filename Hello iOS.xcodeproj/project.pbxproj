@@ -10,6 +10,8 @@
 		0D76CAF9A7ED70829A01655E /* Pods_Hello_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2C2DEE96BED4C50717E805 /* Pods_Hello_iOSUITests.framework */; };
 		565C72D3EE23E3B66B289D5A /* Pods_Hello_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA8A79A49D296E2DFD38FDD /* Pods_Hello_iOS.framework */; };
 		D6182AD908B5072A2483164B /* Pods_Hello_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715487801ED31B032476B841 /* Pods_Hello_iOSTests.framework */; };
+		F60F99DF23AB8001008A6CD5 /* PassDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60F99DD23AB8001008A6CD5 /* PassDataViewController.swift */; };
+		F60F99E023AB8001008A6CD5 /* PassDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F60F99DE23AB8001008A6CD5 /* PassDataViewController.xib */; };
 		F63F22F1231179D600EC123D /* SVProgressHUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63F22EF231179D600EC123D /* SVProgressHUDViewController.swift */; };
 		F63F22F2231179D600EC123D /* SVProgressHUDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63F22F0231179D600EC123D /* SVProgressHUDViewController.xib */; };
 		F63F22F62313970A00EC123D /* NFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63F22F42313970A00EC123D /* NFCViewController.swift */; };
@@ -78,6 +80,8 @@
 		9A06AF9B880DA9A7185B3169 /* Pods-Hello iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello iOS.debug.xcconfig"; path = "Target Support Files/Pods-Hello iOS/Pods-Hello iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		AFA8A79A49D296E2DFD38FDD /* Pods_Hello_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hello_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5468B811F1231BE0574D98 /* Pods-Hello iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Hello iOSTests/Pods-Hello iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		F60F99DD23AB8001008A6CD5 /* PassDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataViewController.swift; sourceTree = "<group>"; };
+		F60F99DE23AB8001008A6CD5 /* PassDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PassDataViewController.xib; sourceTree = "<group>"; };
 		F63F22EF231179D600EC123D /* SVProgressHUDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVProgressHUDViewController.swift; sourceTree = "<group>"; };
 		F63F22F0231179D600EC123D /* SVProgressHUDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SVProgressHUDViewController.xib; sourceTree = "<group>"; };
 		F63F22F42313970A00EC123D /* NFCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +185,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F6143B9723AB74F20044BC55 /* PassDataBetweenVC */ = {
+			isa = PBXGroup;
+			children = (
+				F60F99DD23AB8001008A6CD5 /* PassDataViewController.swift */,
+				F60F99DE23AB8001008A6CD5 /* PassDataViewController.xib */,
+			);
+			path = PassDataBetweenVC;
+			sourceTree = "<group>";
+		};
 		F63F22EE230FE5AA00EC123D /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +286,7 @@
 		F6411B8D230D2C8900C3011C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F6143B9723AB74F20044BC55 /* PassDataBetweenVC */,
 				F63F23042313C14C00EC123D /* CoreML */,
 				F63F23012313BD4E00EC123D /* Extensions */,
 				F63F22F3231396ED00EC123D /* NFC */,
@@ -563,6 +577,7 @@
 				F63F22FD2313B87700EC123D /* Localizable.strings in Resources */,
 				F6DF07BA230E8D9000CC6104 /* CollectionViewCell.xib in Resources */,
 				F6411B6A230D2C1D00C3011C /* LaunchScreen.storyboard in Resources */,
+				F60F99E023AB8001008A6CD5 /* PassDataViewController.xib in Resources */,
 				F6411B67230D2C1D00C3011C /* Assets.xcassets in Resources */,
 				F6411BB1230E363F00C3011C /* AlertViewController.xib in Resources */,
 				F63F22F2231179D600EC123D /* SVProgressHUDViewController.xib in Resources */,
@@ -691,6 +706,7 @@
 			files = (
 				F6411B98230D2DD100C3011C /* MainViewController.swift in Sources */,
 				F6411BB0230E363F00C3011C /* AlertViewController.swift in Sources */,
+				F60F99DF23AB8001008A6CD5 /* PassDataViewController.swift in Sources */,
 				F648B1A7230F98A900C100B7 /* MapKitViewController.swift in Sources */,
 				F6411BB5230E4E0700C3011C /* ImagePickerViewController.swift in Sources */,
 				F6DF07B0230E7A0300CC6104 /* DrawCanvasViewController.swift in Sources */,
