@@ -43,7 +43,6 @@
 		F6371FA123B4A1A800FD5980 /* WebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F648B1A1230F921B00C100B7 /* WebViewViewController.xib */; };
 		F6371FA223B4A1A800FD5980 /* HelloMLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63F23062313C16B00EC123D /* HelloMLViewController.xib */; };
 		F6371FA323B4A1A800FD5980 /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411B93230D2D4C00C3011C /* PickerViewController.xib */; };
-		F6371FA423B4A1A800FD5980 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6D4E0B523A3895300CBFB43 /* InfoPlist.strings */; };
 		F6371FA523B4A1A800FD5980 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F6411B9A230D306B00C3011C /* .gitignore */; };
 		F6371FA623B4A1A800FD5980 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411BA4230D38F500C3011C /* TableViewCell.xib */; };
 		F6371FA723B4A1A800FD5980 /* TableViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411B9E230D33B800C3011C /* TableViewViewController.xib */; };
@@ -52,6 +51,7 @@
 		F6371FAA23B4A1A800FD5980 /* ImagePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411BB4230E4E0700C3011C /* ImagePickerViewController.xib */; };
 		F6371FAB23B4A1A800FD5980 /* MapKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F648B1A6230F98A900C100B7 /* MapKitViewController.xib */; };
 		F6371FAC23B4A1A800FD5980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6411B63230D2C1B00C3011C /* Main.storyboard */; };
+		F6371FBF23B4AD2F00FD5980 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6371FC123B4AD2F00FD5980 /* InfoPlist.strings */; };
 		F63F22F1231179D600EC123D /* SVProgressHUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63F22EF231179D600EC123D /* SVProgressHUDViewController.swift */; };
 		F63F22F2231179D600EC123D /* SVProgressHUDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63F22F0231179D600EC123D /* SVProgressHUDViewController.xib */; };
 		F63F22F62313970A00EC123D /* NFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63F22F42313970A00EC123D /* NFCViewController.swift */; };
@@ -124,7 +124,8 @@
 		F60F99DD23AB8001008A6CD5 /* PassDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataViewController.swift; sourceTree = "<group>"; };
 		F60F99DE23AB8001008A6CD5 /* PassDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PassDataViewController.xib; sourceTree = "<group>"; };
 		F6371FB123B4A1A800FD5980 /* Hello iOS Prod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello iOS Prod.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6371FB223B4A1A800FD5980 /* Hello iOS Prod Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Hello iOS Prod Info.plist"; path = "/Users/stan/Documents/myproject/iOS CodeLab/Hello iOS/Hello iOS Prod Info.plist"; sourceTree = "<absolute>"; };
+		F6371FC023B4AD2F00FD5980 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6371FC223B4AD3300FD5980 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		F63F22EF231179D600EC123D /* SVProgressHUDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVProgressHUDViewController.swift; sourceTree = "<group>"; };
 		F63F22F0231179D600EC123D /* SVProgressHUDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SVProgressHUDViewController.xib; sourceTree = "<group>"; };
 		F63F22F42313970A00EC123D /* NFCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCViewController.swift; sourceTree = "<group>"; };
@@ -142,7 +143,7 @@
 		F6411B64230D2C1B00C3011C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6411B66230D2C1D00C3011C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6411B69230D2C1D00C3011C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F6411B6B230D2C1D00C3011C /* Hello iOS Dev Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hello iOS Dev Info.plist"; sourceTree = "<group>"; };
+		F6411B6B230D2C1D00C3011C /* Hello iOS Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hello iOS Info.plist"; sourceTree = "<group>"; };
 		F6411B70230D2C1D00C3011C /* Hello iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hello iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6411B74230D2C1D00C3011C /* Hello_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_iOSTests.swift; sourceTree = "<group>"; };
 		F6411B76230D2C1D00C3011C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -246,6 +247,22 @@
 			path = PassDataBetweenVC;
 			sourceTree = "<group>";
 		};
+		F6371FBB23B4ACFD00FD5980 /* Dev */ = {
+			isa = PBXGroup;
+			children = (
+				F6D4E0B523A3895300CBFB43 /* InfoPlist.strings */,
+			);
+			path = Dev;
+			sourceTree = "<group>";
+		};
+		F6371FBC23B4AD1000FD5980 /* Prod */ = {
+			isa = PBXGroup;
+			children = (
+				F6371FC123B4AD2F00FD5980 /* InfoPlist.strings */,
+			);
+			path = Prod;
+			sourceTree = "<group>";
+		};
 		F63F22EE230FE5AA00EC123D /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,8 +330,7 @@
 				F6411B8F230D2CD000C3011C /* Storyboard */,
 				F6411B8D230D2C8900C3011C /* ViewController */,
 				F6411B5F230D2C1B00C3011C /* AppDelegate.swift */,
-				F6411B6B230D2C1D00C3011C /* Hello iOS Dev Info.plist */,
-				F6371FB223B4A1A800FD5980 /* Hello iOS Prod Info.plist */,
+				F6411B6B230D2C1D00C3011C /* Hello iOS Info.plist */,
 			);
 			path = "Hello iOS";
 			sourceTree = "<group>";
@@ -382,9 +398,10 @@
 		F6411B90230D2CDD00C3011C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				F6371FBC23B4AD1000FD5980 /* Prod */,
+				F6371FBB23B4ACFD00FD5980 /* Dev */,
 				F6411B66230D2C1D00C3011C /* Assets.xcassets */,
 				F63F22FF2313B87700EC123D /* Localizable.strings */,
-				F6D4E0B523A3895300CBFB43 /* InfoPlist.strings */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -658,9 +675,9 @@
 				F6371F9F23B4A1A800FD5980 /* SVProgressHUDViewController.xib in Resources */,
 				F6371FA023B4A1A800FD5980 /* MainViewController.xib in Resources */,
 				F6371FA123B4A1A800FD5980 /* WebViewViewController.xib in Resources */,
+				F6371FBF23B4AD2F00FD5980 /* InfoPlist.strings in Resources */,
 				F6371FA223B4A1A800FD5980 /* HelloMLViewController.xib in Resources */,
 				F6371FA323B4A1A800FD5980 /* PickerViewController.xib in Resources */,
-				F6371FA423B4A1A800FD5980 /* InfoPlist.strings in Resources */,
 				F6371FA523B4A1A800FD5980 /* .gitignore in Resources */,
 				F6371FA623B4A1A800FD5980 /* TableViewCell.xib in Resources */,
 				F6371FA723B4A1A800FD5980 /* TableViewViewController.xib in Resources */,
@@ -926,6 +943,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F6371FC123B4AD2F00FD5980 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6371FC023B4AD2F00FD5980 /* en */,
+				F6371FC223B4AD3300FD5980 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		F63F22FF2313B87700EC123D /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -973,7 +999,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Hello iOS/Hello iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PL947DA85;
-				INFOPLIST_FILE = "$(SRCROOT)/Hello iOS Prod Info.plist";
+				INFOPLIST_FILE = "Hello iOS/Hello iOS Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -993,7 +1019,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Hello iOS/Hello iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PL947DA85;
-				INFOPLIST_FILE = "$(SRCROOT)/Hello iOS Prod Info.plist";
+				INFOPLIST_FILE = "Hello iOS/Hello iOS Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1130,12 +1156,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Hello iOS/Hello iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3PL947DA85;
-				INFOPLIST_FILE = "Hello iOS/Hello iOS Dev Info.plist";
+				INFOPLIST_FILE = "Hello iOS/Hello iOS Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tonynowater.Hello-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1150,12 +1178,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Hello iOS/Hello iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3PL947DA85;
-				INFOPLIST_FILE = "Hello iOS/Hello iOS Dev Info.plist";
+				INFOPLIST_FILE = "Hello iOS/Hello iOS Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tonynowater.Hello-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -5,5 +5,5 @@
   Created by Stan on 2019/12/13.
   Copyright © 2019 Tony. All rights reserved.
 */
-"CFBundleDisplayName" = "Hello iOS!!!";
-"NSLocationWhenInUseUsageDescription" = "Did you allow to use location";
+"CFBundleDisplayName" = "嗨 iOS Dev!!!";
+"NSLocationWhenInUseUsageDescription" = "請求使用位置";

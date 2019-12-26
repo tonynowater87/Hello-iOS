@@ -2,8 +2,8 @@
   InfoPlist.strings
   Hello iOS
 
-  Created by Stan on 2019/12/13.
+  Created by Stan on 2019/12/26.
   Copyright © 2019 Tony. All rights reserved.
 */
-"CFBundleDisplayName" = "嗨 iOS!!!";
+"CFBundleDisplayName" = "嗨 iOS Prod!!!";
 "NSLocationWhenInUseUsageDescription" = "請求使用位置";
