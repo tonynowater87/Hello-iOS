@@ -12,6 +12,46 @@
 		D6182AD908B5072A2483164B /* Pods_Hello_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715487801ED31B032476B841 /* Pods_Hello_iOSTests.framework */; };
 		F60F99DF23AB8001008A6CD5 /* PassDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60F99DD23AB8001008A6CD5 /* PassDataViewController.swift */; };
 		F60F99E023AB8001008A6CD5 /* PassDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F60F99DE23AB8001008A6CD5 /* PassDataViewController.xib */; };
+		F6371F8323B4A1A800FD5980 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411B96230D2DD100C3011C /* MainViewController.swift */; };
+		F6371F8423B4A1A800FD5980 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411BAE230E363F00C3011C /* AlertViewController.swift */; };
+		F6371F8523B4A1A800FD5980 /* PassDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60F99DD23AB8001008A6CD5 /* PassDataViewController.swift */; };
+		F6371F8623B4A1A800FD5980 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F648B1A5230F98A900C100B7 /* MapKitViewController.swift */; };
+		F6371F8723B4A1A800FD5980 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411BB3230E4E0700C3011C /* ImagePickerViewController.swift */; };
+		F6371F8823B4A1A800FD5980 /* DrawCanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF07AF230E7A0300CC6104 /* DrawCanvasViewController.swift */; };
+		F6371F8923B4A1A800FD5980 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411BA1230D351700C3011C /* TableViewDataSource.swift */; };
+		F6371F8A23B4A1A800FD5980 /* HelloMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63F23052313C16B00EC123D /* HelloMLViewController.swift */; };
+		F6371F8B23B4A1A800FD5980 /* SVProgressHUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63F22EF231179D600EC123D /* SVProgressHUDViewController.swift */; };
+		F6371F8C23B4A1A800FD5980 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411B92230D2D4C00C3011C /* PickerViewController.swift */; };
+		F6371F8D23B4A1A800FD5980 /* NFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63F22F42313970A00EC123D /* NFCViewController.swift */; };
+		F6371F8E23B4A1A800FD5980 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411BA3230D38F500C3011C /* TableViewCell.swift */; };
+		F6371F8F23B4A1A800FD5980 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63F23022313BD5900EC123D /* Extension.swift */; };
+		F6371F9023B4A1A800FD5980 /* CollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF07B2230E85A800CC6104 /* CollectionViewViewController.swift */; };
+		F6371F9123B4A1A800FD5980 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F648B1A0230F921B00C100B7 /* WebViewViewController.swift */; };
+		F6371F9223B4A1A800FD5980 /* TableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411B9D230D33B800C3011C /* TableViewViewController.swift */; };
+		F6371F9323B4A1A800FD5980 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF07B7230E8D9000CC6104 /* CollectionViewCell.swift */; };
+		F6371F9423B4A1A800FD5980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6411B5F230D2C1B00C3011C /* AppDelegate.swift */; };
+		F6371F9523B4A1A800FD5980 /* CollectionViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF07BC230E8E2100CC6104 /* CollectionViewDatasource.swift */; };
+		F6371F9723B4A1A800FD5980 /* Pods_Hello_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA8A79A49D296E2DFD38FDD /* Pods_Hello_iOS.framework */; };
+		F6371F9923B4A1A800FD5980 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F63F22FF2313B87700EC123D /* Localizable.strings */; };
+		F6371F9A23B4A1A800FD5980 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6DF07B8230E8D9000CC6104 /* CollectionViewCell.xib */; };
+		F6371F9B23B4A1A800FD5980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6411B68230D2C1D00C3011C /* LaunchScreen.storyboard */; };
+		F6371F9C23B4A1A800FD5980 /* PassDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F60F99DE23AB8001008A6CD5 /* PassDataViewController.xib */; };
+		F6371F9D23B4A1A800FD5980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6411B66230D2C1D00C3011C /* Assets.xcassets */; };
+		F6371F9E23B4A1A800FD5980 /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411BAF230E363F00C3011C /* AlertViewController.xib */; };
+		F6371F9F23B4A1A800FD5980 /* SVProgressHUDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63F22F0231179D600EC123D /* SVProgressHUDViewController.xib */; };
+		F6371FA023B4A1A800FD5980 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411B97230D2DD100C3011C /* MainViewController.xib */; };
+		F6371FA123B4A1A800FD5980 /* WebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F648B1A1230F921B00C100B7 /* WebViewViewController.xib */; };
+		F6371FA223B4A1A800FD5980 /* HelloMLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63F23062313C16B00EC123D /* HelloMLViewController.xib */; };
+		F6371FA323B4A1A800FD5980 /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411B93230D2D4C00C3011C /* PickerViewController.xib */; };
+		F6371FA423B4A1A800FD5980 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6D4E0B523A3895300CBFB43 /* InfoPlist.strings */; };
+		F6371FA523B4A1A800FD5980 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F6411B9A230D306B00C3011C /* .gitignore */; };
+		F6371FA623B4A1A800FD5980 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411BA4230D38F500C3011C /* TableViewCell.xib */; };
+		F6371FA723B4A1A800FD5980 /* TableViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411B9E230D33B800C3011C /* TableViewViewController.xib */; };
+		F6371FA823B4A1A800FD5980 /* CollectionViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6DF07B3230E85A800CC6104 /* CollectionViewViewController.xib */; };
+		F6371FA923B4A1A800FD5980 /* NFCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63F22F52313970A00EC123D /* NFCViewController.xib */; };
+		F6371FAA23B4A1A800FD5980 /* ImagePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6411BB4230E4E0700C3011C /* ImagePickerViewController.xib */; };
+		F6371FAB23B4A1A800FD5980 /* MapKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F648B1A6230F98A900C100B7 /* MapKitViewController.xib */; };
+		F6371FAC23B4A1A800FD5980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6411B63230D2C1B00C3011C /* Main.storyboard */; };
 		F63F22F1231179D600EC123D /* SVProgressHUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63F22EF231179D600EC123D /* SVProgressHUDViewController.swift */; };
 		F63F22F2231179D600EC123D /* SVProgressHUDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63F22F0231179D600EC123D /* SVProgressHUDViewController.xib */; };
 		F63F22F62313970A00EC123D /* NFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63F22F42313970A00EC123D /* NFCViewController.swift */; };
@@ -83,6 +123,8 @@
 		BC5468B811F1231BE0574D98 /* Pods-Hello iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Hello iOSTests/Pods-Hello iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		F60F99DD23AB8001008A6CD5 /* PassDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataViewController.swift; sourceTree = "<group>"; };
 		F60F99DE23AB8001008A6CD5 /* PassDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PassDataViewController.xib; sourceTree = "<group>"; };
+		F6371FB123B4A1A800FD5980 /* Hello iOS Prod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello iOS Prod.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6371FB223B4A1A800FD5980 /* Hello iOS Prod Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Hello iOS Prod Info.plist"; path = "/Users/stan/Documents/myproject/iOS CodeLab/Hello iOS/Hello iOS Prod Info.plist"; sourceTree = "<absolute>"; };
 		F63F22EF231179D600EC123D /* SVProgressHUDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVProgressHUDViewController.swift; sourceTree = "<group>"; };
 		F63F22F0231179D600EC123D /* SVProgressHUDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SVProgressHUDViewController.xib; sourceTree = "<group>"; };
 		F63F22F42313970A00EC123D /* NFCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCViewController.swift; sourceTree = "<group>"; };
@@ -95,12 +137,12 @@
 		F63F23022313BD5900EC123D /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		F63F23052313C16B00EC123D /* HelloMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloMLViewController.swift; sourceTree = "<group>"; };
 		F63F23062313C16B00EC123D /* HelloMLViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelloMLViewController.xib; sourceTree = "<group>"; };
-		F6411B5C230D2C1B00C3011C /* Hello iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6411B5C230D2C1B00C3011C /* Hello iOS Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello iOS Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6411B5F230D2C1B00C3011C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6411B64230D2C1B00C3011C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6411B66230D2C1D00C3011C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6411B69230D2C1D00C3011C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F6411B6B230D2C1D00C3011C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6411B6B230D2C1D00C3011C /* Hello iOS Dev Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hello iOS Dev Info.plist"; sourceTree = "<group>"; };
 		F6411B70230D2C1D00C3011C /* Hello iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hello iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6411B74230D2C1D00C3011C /* Hello_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_iOSTests.swift; sourceTree = "<group>"; };
 		F6411B76230D2C1D00C3011C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -137,6 +179,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F6371F9623B4A1A800FD5980 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6371F9723B4A1A800FD5980 /* Pods_Hello_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6411B59230D2C1B00C3011C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -247,9 +297,10 @@
 		F6411B5D230D2C1B00C3011C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F6411B5C230D2C1B00C3011C /* Hello iOS.app */,
+				F6411B5C230D2C1B00C3011C /* Hello iOS Dev.app */,
 				F6411B70230D2C1D00C3011C /* Hello iOSTests.xctest */,
 				F6411B7B230D2C1D00C3011C /* Hello iOSUITests.xctest */,
+				F6371FB123B4A1A800FD5980 /* Hello iOS Prod.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -262,7 +313,8 @@
 				F6411B8F230D2CD000C3011C /* Storyboard */,
 				F6411B8D230D2C8900C3011C /* ViewController */,
 				F6411B5F230D2C1B00C3011C /* AppDelegate.swift */,
-				F6411B6B230D2C1D00C3011C /* Info.plist */,
+				F6411B6B230D2C1D00C3011C /* Hello iOS Dev Info.plist */,
+				F6371FB223B4A1A800FD5980 /* Hello iOS Prod Info.plist */,
 			);
 			path = "Hello iOS";
 			sourceTree = "<group>";
@@ -463,9 +515,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F6411B5B230D2C1B00C3011C /* Hello iOS */ = {
+		F6371F8023B4A1A800FD5980 /* Hello iOS Prod */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F6411B84230D2C1D00C3011C /* Build configuration list for PBXNativeTarget "Hello iOS" */;
+			buildConfigurationList = F6371FAE23B4A1A800FD5980 /* Build configuration list for PBXNativeTarget "Hello iOS Prod" */;
+			buildPhases = (
+				F6371F8123B4A1A800FD5980 /* [CP] Check Pods Manifest.lock */,
+				F6371F8223B4A1A800FD5980 /* Sources */,
+				F6371F9623B4A1A800FD5980 /* Frameworks */,
+				F6371F9823B4A1A800FD5980 /* Resources */,
+				F6371FAD23B4A1A800FD5980 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hello iOS Prod";
+			productName = "Hello iOS";
+			productReference = F6371FB123B4A1A800FD5980 /* Hello iOS Prod.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6411B5B230D2C1B00C3011C /* Hello iOS Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6411B84230D2C1D00C3011C /* Build configuration list for PBXNativeTarget "Hello iOS Dev" */;
 			buildPhases = (
 				A4854719E0D607BA974C6A74 /* [CP] Check Pods Manifest.lock */,
 				F6411B58230D2C1B00C3011C /* Sources */,
@@ -477,9 +548,9 @@
 			);
 			dependencies = (
 			);
-			name = "Hello iOS";
+			name = "Hello iOS Dev";
 			productName = "Hello iOS";
-			productReference = F6411B5C230D2C1B00C3011C /* Hello iOS.app */;
+			productReference = F6411B5C230D2C1B00C3011C /* Hello iOS Dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F6411B6F230D2C1D00C3011C /* Hello iOSTests */ = {
@@ -565,7 +636,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F6411B5B230D2C1B00C3011C /* Hello iOS */,
+				F6411B5B230D2C1B00C3011C /* Hello iOS Dev */,
+				F6371F8023B4A1A800FD5980 /* Hello iOS Prod */,
 				F6411B6F230D2C1D00C3011C /* Hello iOSTests */,
 				F6411B7A230D2C1D00C3011C /* Hello iOSUITests */,
 			);
@@ -573,6 +645,33 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F6371F9823B4A1A800FD5980 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6371F9923B4A1A800FD5980 /* Localizable.strings in Resources */,
+				F6371F9A23B4A1A800FD5980 /* CollectionViewCell.xib in Resources */,
+				F6371F9B23B4A1A800FD5980 /* LaunchScreen.storyboard in Resources */,
+				F6371F9C23B4A1A800FD5980 /* PassDataViewController.xib in Resources */,
+				F6371F9D23B4A1A800FD5980 /* Assets.xcassets in Resources */,
+				F6371F9E23B4A1A800FD5980 /* AlertViewController.xib in Resources */,
+				F6371F9F23B4A1A800FD5980 /* SVProgressHUDViewController.xib in Resources */,
+				F6371FA023B4A1A800FD5980 /* MainViewController.xib in Resources */,
+				F6371FA123B4A1A800FD5980 /* WebViewViewController.xib in Resources */,
+				F6371FA223B4A1A800FD5980 /* HelloMLViewController.xib in Resources */,
+				F6371FA323B4A1A800FD5980 /* PickerViewController.xib in Resources */,
+				F6371FA423B4A1A800FD5980 /* InfoPlist.strings in Resources */,
+				F6371FA523B4A1A800FD5980 /* .gitignore in Resources */,
+				F6371FA623B4A1A800FD5980 /* TableViewCell.xib in Resources */,
+				F6371FA723B4A1A800FD5980 /* TableViewViewController.xib in Resources */,
+				F6371FA823B4A1A800FD5980 /* CollectionViewViewController.xib in Resources */,
+				F6371FA923B4A1A800FD5980 /* NFCViewController.xib in Resources */,
+				F6371FAA23B4A1A800FD5980 /* ImagePickerViewController.xib in Resources */,
+				F6371FAB23B4A1A800FD5980 /* MapKitViewController.xib in Resources */,
+				F6371FAC23B4A1A800FD5980 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6411B5A230D2C1B00C3011C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -700,9 +799,74 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F6371F8123B4A1A800FD5980 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hello iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6371FAD23B4A1A800FD5980 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hello iOS/Pods-Hello iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hello iOS/Pods-Hello iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hello iOS/Pods-Hello iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F6371F8223B4A1A800FD5980 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6371F8323B4A1A800FD5980 /* MainViewController.swift in Sources */,
+				F6371F8423B4A1A800FD5980 /* AlertViewController.swift in Sources */,
+				F6371F8523B4A1A800FD5980 /* PassDataViewController.swift in Sources */,
+				F6371F8623B4A1A800FD5980 /* MapKitViewController.swift in Sources */,
+				F6371F8723B4A1A800FD5980 /* ImagePickerViewController.swift in Sources */,
+				F6371F8823B4A1A800FD5980 /* DrawCanvasViewController.swift in Sources */,
+				F6371F8923B4A1A800FD5980 /* TableViewDataSource.swift in Sources */,
+				F6371F8A23B4A1A800FD5980 /* HelloMLViewController.swift in Sources */,
+				F6371F8B23B4A1A800FD5980 /* SVProgressHUDViewController.swift in Sources */,
+				F6371F8C23B4A1A800FD5980 /* PickerViewController.swift in Sources */,
+				F6371F8D23B4A1A800FD5980 /* NFCViewController.swift in Sources */,
+				F6371F8E23B4A1A800FD5980 /* TableViewCell.swift in Sources */,
+				F6371F8F23B4A1A800FD5980 /* Extension.swift in Sources */,
+				F6371F9023B4A1A800FD5980 /* CollectionViewViewController.swift in Sources */,
+				F6371F9123B4A1A800FD5980 /* WebViewViewController.swift in Sources */,
+				F6371F9223B4A1A800FD5980 /* TableViewViewController.swift in Sources */,
+				F6371F9323B4A1A800FD5980 /* CollectionViewCell.swift in Sources */,
+				F6371F9423B4A1A800FD5980 /* AppDelegate.swift in Sources */,
+				F6371F9523B4A1A800FD5980 /* CollectionViewDatasource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6411B58230D2C1B00C3011C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -751,12 +915,12 @@
 /* Begin PBXTargetDependency section */
 		F6411B72230D2C1D00C3011C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F6411B5B230D2C1B00C3011C /* Hello iOS */;
+			target = F6411B5B230D2C1B00C3011C /* Hello iOS Dev */;
 			targetProxy = F6411B71230D2C1D00C3011C /* PBXContainerItemProxy */;
 		};
 		F6411B7D230D2C1D00C3011C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F6411B5B230D2C1B00C3011C /* Hello iOS */;
+			target = F6411B5B230D2C1B00C3011C /* Hello iOS Dev */;
 			targetProxy = F6411B7C230D2C1D00C3011C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -801,6 +965,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F6371FAF23B4A1A800FD5980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A06AF9B880DA9A7185B3169 /* Pods-Hello iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Hello iOS/Hello iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3PL947DA85;
+				INFOPLIST_FILE = "$(SRCROOT)/Hello iOS Prod Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tonynowater.Hello-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6371FB023B4A1A800FD5980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16915F12D373BBCF77E59EB1 /* Pods-Hello iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Hello iOS/Hello iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3PL947DA85;
+				INFOPLIST_FILE = "$(SRCROOT)/Hello iOS Prod Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tonynowater.Hello-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		F6411B82230D2C1D00C3011C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -927,7 +1131,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Hello iOS/Hello iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PL947DA85;
-				INFOPLIST_FILE = "Hello iOS/Info.plist";
+				INFOPLIST_FILE = "Hello iOS/Hello iOS Dev Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -947,7 +1151,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Hello iOS/Hello iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PL947DA85;
-				INFOPLIST_FILE = "Hello iOS/Info.plist";
+				INFOPLIST_FILE = "Hello iOS/Hello iOS Dev Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1044,6 +1248,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F6371FAE23B4A1A800FD5980 /* Build configuration list for PBXNativeTarget "Hello iOS Prod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6371FAF23B4A1A800FD5980 /* Debug */,
+				F6371FB023B4A1A800FD5980 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F6411B57230D2C1B00C3011C /* Build configuration list for PBXProject "Hello iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1053,7 +1266,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F6411B84230D2C1D00C3011C /* Build configuration list for PBXNativeTarget "Hello iOS" */ = {
+		F6411B84230D2C1D00C3011C /* Build configuration list for PBXNativeTarget "Hello iOS Dev" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F6411B85230D2C1D00C3011C /* Debug */,

@@ -5,5 +5,5 @@
   Created by Stan on 2019/12/13.
   Copyright © 2019 Tony. All rights reserved.
 */
-"CFBundleDisplayName" = "APP名稱";
+"CFBundleDisplayName" = "嗨 iOS!!!";
 "NSLocationWhenInUseUsageDescription" = "請求使用位置";
